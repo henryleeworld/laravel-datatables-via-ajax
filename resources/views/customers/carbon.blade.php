@@ -25,7 +25,7 @@
         serverSide: true,
         ajax: '{{ route('api.carbon') }}',
         language: {
-            url: "/js/data-tables/1.10.20/plug-ins/i18n/Chinese-traditional.json"
+            url: "/js/data-tables/1.10.22/plug-ins/i18n/Chinese-traditional.json"
         },
         columns: [
           { data: 'id', name: 'id' },

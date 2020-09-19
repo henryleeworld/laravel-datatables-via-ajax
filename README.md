@@ -1,4 +1,4 @@
-# Laravel 7 通過 Ajax 選項處理 DataTables jQuery 套件的伺服器端工作
+# Laravel 8 通過 Ajax 選項處理 DataTables jQuery 套件的伺服器端工作
 
 引入 yajra 的 laravel-datatables-oracle 套件來擴增實作當用戶點擊分頁、排序時，DataTables 會自動向伺服器端發出 Ajax，並自帶一些參數。
 

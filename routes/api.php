@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\APIController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,14 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/row-details', 'APIController@getRowDetailsData')->name('api.row_details');
-
-Route::get('/master-details', 'APIController@getMasterDetailsData')->name('api.master_details');
-
-Route::get('/master-details/{id}', 'APIController@getMasterDetailsSingleData')->name('api.master_single_details');
-
-Route::get('/column-search', 'APIController@getColumnSearchData')->name('api.column_search');
-
-Route::get('/row-attributes', 'APIController@getRowAttributesData')->name('api.row_attributes');
-
-Route::get('/carbon', 'APIController@getCarbonData')->name('api.carbon');
+Route::get('/row-details', [APIController::class, 'getRowDetailsData'])->name('api.row_details');
+Route::get('/master-details', [APIController::class, 'getMasterDetailsData'])->name('api.master_details');
+Route::get('/master-details/{id}', [APIController::class, 'getMasterDetailsSingleData'])->name('api.master_single_details');
+Route::get('/column-search', [APIController::class, 'getColumnSearchData'])->name('api.column_search');
+Route::get('/row-attributes', [APIController::class, 'getRowAttributesData'])->name('api.row_attributes');
+Route::get('/carbon', [APIController::class, 'getCarbonData'])->name('api.carbon');

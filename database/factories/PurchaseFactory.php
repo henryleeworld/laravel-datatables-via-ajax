@@ -1,6 +1,9 @@
 <?php
 
-use Faker\Generator as Faker;
+namespace Database\Factories;
+
+use App\Models\Purchase;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +16,25 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\Purchase::class, function (Faker $faker) {
-    return [
-        'bank_acc_number' => $faker->bankAccountNumber,
-        'company'         => $faker->company
-    ];
-});
+class PurchaseFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Purchase::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'bank_acc_number' => $this->faker->bankAccountNumber,
+            'company'         => $this->faker->company
+        ];
+    }
+}

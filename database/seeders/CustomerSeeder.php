@@ -1,5 +1,9 @@
 <?php
 
+namespace Database\Seeders;
+
+use App\Models\Customer;
+use App\Models\Purchase;
 use Illuminate\Database\Seeder;
 
 class CustomerSeeder extends Seeder
@@ -11,9 +15,9 @@ class CustomerSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Customer::class, 200)->create()->each(function ($customer) {
+        Customer::factory()->times(200)->create()->each(function ($customer) {
             for($i = 0; $i < 15; $i++) {
-                factory(App\Purchase::class)->create(['customer_id' => $customer->id]);
+                Purchase::factory()->create(['customer_id' => $customer->id]);
             }
         });
     }

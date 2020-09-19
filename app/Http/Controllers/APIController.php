@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Customer;
+use App\Models\Customer;
 use Yajra\Datatables\Datatables;
 
 class APIController extends Controller
@@ -44,7 +44,7 @@ class APIController extends Controller
 
         return Datatables::of($customers)
             ->addColumn('action', function ($customer) {
-                return '<a href="#edit-'. $customer->id.'" class="btn btn-xs btn-primary"><i class="glyphicon glyphicon-edit"></i> Edit</a>';
+                return '<a href="#edit-'. $customer->id.'" class="btn btn-xs btn-primary"><i class="fas fa-edit"></i> 編輯</a>';
             })
             ->editColumn('id', '{{$id}}')
             ->removeColumn('updated_at')
