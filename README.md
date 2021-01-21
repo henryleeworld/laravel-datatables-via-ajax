@@ -12,7 +12,7 @@ $ git clone
 ```sh
 $ composer install
 ```
-- 產⽣ Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
+- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
 ```
@@ -26,11 +26,11 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/rsNUk6F.png)
+![](https://i.imgur.com/uz0cFNE.png)
 > 用表格顯示全部資料
 
-![](https://i.imgur.com/bvAC4BN.png)
+![](https://i.imgur.com/iCwfUeB.png)
 > 用表格顯示分頁的資料
 
-![](https://i.imgur.com/W0h22vB.png)
+![](https://i.imgur.com/2K0ug2K.png)
 > 用表格顯示分頁的資料，區分奇數列、偶數列使用不同背景顏色

@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="panel-heading">Carbon 格式</div>
-    <div class="panel-body">
+    <div class="card-header">Carbon 格式</div>
+    <div class="card-body">
         <table class="table table-bordered" id="customers-table">
             <thead>
                 <tr>
@@ -25,7 +25,7 @@
         serverSide: true,
         ajax: '{{ route('api.carbon') }}',
         language: {
-            url: "/js/data-tables/1.10.22/plug-ins/i18n/Chinese-traditional.json"
+            url: "/js/data-tables/1.10.23/plug-ins/i18n/Chinese-traditional.json"
         },
         columns: [
           { data: 'id', name: 'id' },

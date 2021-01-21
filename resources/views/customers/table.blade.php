@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="panel-heading">簡單表格</div>
-    <div class="panel-body">
+    <div class="card-header">簡單表格</div>
+    <div class="card-body">
         <table class="table">
             <thead>
             <tr>
