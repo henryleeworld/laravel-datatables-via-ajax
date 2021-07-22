@@ -35,7 +35,7 @@
         serverSide: true,
         ajax: '{{ route('api.column_search') }}',
         language: {
-            url: "/js/data-tables/1.10.23/plug-ins/i18n/Chinese-traditional.json"
+            url: "https://cdn.datatables.net/plug-ins/1.10.25/i18n/Chinese-traditional.json"
         },
         columns: [
           { data: 'id', name: 'id' },
