@@ -47,7 +47,7 @@
             serverSide: true,
             ajax: '{{ route('api.row_details') }}',
             language: {
-                url: "https://cdn.datatables.net/plug-ins/1.10.25/i18n/Chinese-traditional.json"
+                url: "https://cdn.datatables.net/plug-ins/1.11.0/i18n/zh_Hant.json"
             },
             columns: [
               {
