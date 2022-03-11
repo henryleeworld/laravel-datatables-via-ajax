@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
 Route::get('/row-details', [APIController::class, 'getRowDetailsData'])->name('api.row_details');
 Route::get('/master-details', [APIController::class, 'getMasterDetailsData'])->name('api.master_details');
 Route::get('/master-details/{id}', [APIController::class, 'getMasterDetailsSingleData'])->name('api.master_single_details');

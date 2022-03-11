@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', [HomeController::class, 'index'])->name('simple');
 Route::get('/row-details', [HomeController::class, 'getRowDetails'])->name('row_details');
 Route::get('/master-details', [HomeController::class, 'getMasterDetails'])->name('master_details');
