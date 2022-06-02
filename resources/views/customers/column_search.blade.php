@@ -3,7 +3,7 @@
 @section('content')
     <div class="card-header">欄位搜尋</div>
     <div class="card-body">
-        <table class="table table-bordered" id="customers-table">
+        <table class="table table-bordered table-striped" id="customers-table">
             <thead>
                 <tr>
                     <th>編號</th>
@@ -35,7 +35,7 @@
         serverSide: true,
         ajax: '{{ route('api.column_search') }}',
         language: {
-            url: "https://cdn.datatables.net/plug-ins/1.11.4/i18n/zh_Hant.json"
+            url: "https://cdn.datatables.net/plug-ins/1.12.0/i18n/zh-HANT.json"
         },
         columns: [
           { data: 'id', name: 'id' },

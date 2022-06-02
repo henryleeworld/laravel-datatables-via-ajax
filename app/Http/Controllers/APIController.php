@@ -50,7 +50,7 @@ class APIController extends Controller
             ->removeColumn('updated_at')
             ->setRowId('id')
             ->setRowClass(function ($user) {
-                return $user->id % 2 == 0 ? 'alert-success' : 'alert-warning';
+                return $user->id % 2 == 0 ? 'bg-success bg-opacity-25' : 'bg-warning bg-opacity-25';
             })
             ->setRowData([
                 'id' => 'test',

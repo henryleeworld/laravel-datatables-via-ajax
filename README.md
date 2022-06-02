@@ -26,11 +26,11 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/6FLRFBD.png)
+![](https://i.imgur.com/aa15ojj.png)
 > 用表格顯示全部資料
 
-![](https://i.imgur.com/2QJ7bca.png)
+![](https://i.imgur.com/hZRhe11.png)
 > 用表格顯示分頁的資料
 
-![](https://i.imgur.com/0GgWWcF.png)
+![](https://i.imgur.com/ozqUkoK.png)
 > 用表格顯示分頁的資料，區分奇數列、偶數列使用不同背景顏色
