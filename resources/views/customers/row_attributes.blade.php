@@ -26,7 +26,7 @@
             serverSide: true,
             ajax: '{{ route('api.row_attributes') }}',
             language: {
-                url: "https://cdn.datatables.net/plug-ins/1.12.1/i18n/zh-HANT.json"
+                url: "https://cdn.datatables.net/plug-ins/1.13.2/i18n/zh-HANT.json"
             },
             columns: [
               { data: 'id', name: 'id' },
