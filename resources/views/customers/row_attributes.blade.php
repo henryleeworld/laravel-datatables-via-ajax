@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card-header">資料列屬性</div>
+    <div class="card-header">{{ __('Row attributes') }}</div>
     <div class="card-body">
         <table class="table table-bordered" id="customers-table">
             <thead>
                 <tr>
-                    <th>編號</th>
-                    <th>名</th>
-                    <th>姓</th>
-                    <th>電子郵件</th>
-                    <th>建立時間</th>
+                    <th>{{ __('Id') }}</th>
+                    <th>{{ __('First name') }}</th>
+                    <th>{{ __('Last name') }}</th>
+                    <th>{{ __('Email') }}</th>
+                    <th>{{ __('Created At') }}</th>
                     <th></th>
                 </tr>
             </thead>
@@ -26,7 +26,7 @@
             serverSide: true,
             ajax: '{{ route('api.row_attributes') }}',
             language: {
-                url: "https://cdn.datatables.net/plug-ins/1.13.2/i18n/zh-HANT.json"
+                url: "https://cdn.datatables.net/plug-ins/1.13.5/i18n/zh-HANT.json"
             },
             columns: [
               { data: 'id', name: 'id' },

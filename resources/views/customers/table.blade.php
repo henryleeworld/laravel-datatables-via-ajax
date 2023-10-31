@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card-header">簡單表格</div>
+    <div class="card-header">{{ __('Simple table') }}</div>
     <div class="card-body">
         <table class="table">
             <thead>
             <tr>
-                <th>名</th>
-                <th>姓</th>
-                <th>電子郵件</th>
-                <th>建立時間</th>
-                <th>更新時間</th>
+                <th>{{ __('First name') }}</th>
+                <th>{{ __('Last name') }}</th>
+                <th>{{ __('Email') }}</th>
+                <th>{{ __('Created at') }}</th>
+                <th>{{ __('Updated at') }}</th>
             </tr>
             </thead>
             <tbody>

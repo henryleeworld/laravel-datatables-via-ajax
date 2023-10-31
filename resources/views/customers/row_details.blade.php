@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card-header">資料列詳細資料</div>
+    <div class="card-header">{{ __('Row details') }}</div>
     <div class="card-body">
         <table class="table table-bordered table-striped" id="customers-table">
             <thead>
                 <tr>
                     <th></th>
-                    <th>編號</th>
-                    <th>名</th>
-                    <th>姓</th>
-                    <th>電子郵件</th>
-                    <th>建立時間</th>
-                    <th>更新時間</th>
+                    <th>{{ __('Id') }}</th>
+                    <th>{{ __('First name') }}</th>
+                    <th>{{ __('Last name') }}</th>
+                    <th>{{ __('Email') }}</th>
+                    <th>{{ __('Created At') }}</th>
+                    <th>{{ __('Updated At') }}</th>
                 </tr>
             </thead>
         </table>
@@ -20,21 +20,20 @@
 @endsection
 
 @section('javascript')
-
     <script id="details-template" type="text/x-handlebars-template">
         @verbatim
             <table class="table">
                 <tr>
-                    <td>Full name:</td>
+                    <td>{{ __('Full name:') }}</td>
                     <td>{{first_name}}</td>
                 </tr>
                 <tr>
-                    <td>Email:</td>
+                    <td>{{ __('Email:') }}</td>
                     <td>{{email}}</td>
                 </tr>
                 <tr>
-                    <td>Extra info:</td>
-                    <td>And any further details here (images etc)...</td>
+                    <td>{{ __('Extra info:') }}</td>
+                    <td>{{ __('And any further details here (images etc)...') }}</td>
                 </tr>
             </table>
         @endverbatim
@@ -47,7 +46,7 @@
             serverSide: true,
             ajax: '{{ route('api.row_details') }}',
             language: {
-                url: "https://cdn.datatables.net/plug-ins/1.13.2/i18n/zh-HANT.json"
+                url: "https://cdn.datatables.net/plug-ins/1.13.5/i18n/zh-HANT.json"
             },
             columns: [
               {

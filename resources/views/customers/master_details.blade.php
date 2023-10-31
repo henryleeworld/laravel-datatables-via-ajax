@@ -1,18 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card-header">主要詳細資料</div>
+    <div class="card-header">{{ __('Master details') }}</div>
     <div class="card-body">
         <table class="table table-bordered table-striped" id="customers-table">
             <thead>
             <tr>
                 <th></th>
-                <th>編號</th>
-                <th>名</th>
-                <th>姓</th>
-                <th>電子郵件</th>
-                <th>建立時間</th>
-                <th>更新時間</th>
+                <th>{{ __('Id') }}</th>
+                <th>{{ __('First name') }}</th>
+                <th>{{ __('Last name') }}</th>
+                <th>{{ __('Email') }}</th>
+                <th>{{ __('Created At') }}</th>
+                <th>{{ __('Updated At') }}</th>
             </tr>
             </thead>
         </table>
@@ -43,7 +43,7 @@
         serverSide: true,
         ajax: '{{ route('api.master_details') }}',
         language: {
-            url: "https://cdn.datatables.net/plug-ins/1.13.2/i18n/zh-HANT.json"
+            url: "https://cdn.datatables.net/plug-ins/1.13.5/i18n/zh-HANT.json"
         },
         columns: [
           {
