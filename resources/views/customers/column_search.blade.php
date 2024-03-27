@@ -35,7 +35,7 @@
         serverSide: true,
         ajax: '{{ route('api.column_search') }}',
         language: {
-            url: "https://cdn.datatables.net/plug-ins/1.13.5/i18n/zh-HANT.json"
+            url: "https://cdn.datatables.net/plug-ins/1.13.10/i18n/zh-HANT.json"
         },
         columns: [
           { data: 'id', name: 'id' },
