@@ -3,7 +3,7 @@
 @section('content')
     <div class="card-header">{{ __('Column search') }}</div>
     <div class="card-body">
-        <table class="table table-bordered table-striped" id="customers-table">
+        <table class="table table-bordered table-striped" id="customers-table" style="width:100%">
             <thead>
                 <tr>
                     <th>{{ __('Id') }}</th>
@@ -32,6 +32,7 @@
     <script>
       $('#customers-table').DataTable({
         processing: true,
+        scrollX: true,
         serverSide: true,
         ajax: '{{ route('api.column_search') }}',
         language: {

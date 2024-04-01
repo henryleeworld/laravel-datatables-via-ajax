@@ -2,15 +2,15 @@
 
 @section('content')
     <div class="card-header">{{ __('Simple table') }}</div>
-    <div class="card-body">
+    <div class="card-body table-responsive">
         <table class="table">
             <thead>
             <tr>
                 <th>{{ __('First name') }}</th>
                 <th>{{ __('Last name') }}</th>
                 <th>{{ __('Email') }}</th>
-                <th>{{ __('Created at') }}</th>
-                <th>{{ __('Updated at') }}</th>
+                <th>{{ __('Created At') }}</th>
+                <th>{{ __('Updated At') }}</th>
             </tr>
             </thead>
             <tbody>

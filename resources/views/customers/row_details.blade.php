@@ -3,7 +3,7 @@
 @section('content')
     <div class="card-header">{{ __('Row details') }}</div>
     <div class="card-body">
-        <table class="table table-bordered table-striped" id="customers-table">
+        <table class="table table-bordered table-striped" id="customers-table" style="width:100%">
             <thead>
                 <tr>
                     <th></th>
@@ -43,6 +43,7 @@
           var template = Handlebars.compile($("#details-template").html());
           var table = $('#customers-table').DataTable({
             processing: true,
+            scrollX: true,
             serverSide: true,
             ajax: '{{ route('api.row_details') }}',
             language: {

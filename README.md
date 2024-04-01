@@ -1,4 +1,4 @@
-# Laravel 10 通過 Ajax 選項處理 DataTables jQuery 套件的伺服器端工作
+# Laravel 11 通過 Ajax 選項處理 DataTables jQuery 套件的伺服器端工作
 
 引入 yajra 的 laravel-datatables-oracle 套件來擴增實作當用戶點擊分頁、排序時，DataTables 會自動向伺服器端發出 Ajax，並自帶一些參數。
 
@@ -26,11 +26,11 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/DTzG4wx.png)
+![](https://i.imgur.com/JLnj2i1.png)
 > 用表格顯示全部資料
 
-![](https://i.imgur.com/HvOa02y.png)
+![](https://i.imgur.com/AGN5r0U.png)
 > 用表格顯示分頁的資料
 
-![](https://i.imgur.com/42pYhtf.png)
+![](https://i.imgur.com/VdS5y7M.png)
 > 用表格顯示分頁的資料，區分奇數列、偶數列使用不同背景顏色
