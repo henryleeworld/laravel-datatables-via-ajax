@@ -26,7 +26,7 @@
         serverSide: true,
         ajax: '{{ route('api.carbon') }}',
         language: {
-            url: "https://cdn.datatables.net/plug-ins/1.13.10/i18n/zh-HANT.json"
+            url: "https://cdn.datatables.net/plug-ins/2.1.8/i18n/zh-HANT.json"
         },
         columns: [
           { data: 'id', name: 'id' },
