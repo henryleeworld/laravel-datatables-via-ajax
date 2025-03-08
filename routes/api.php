@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\APIController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Api\V1\APIController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/row-details', [APIController::class, 'getRowDetailsData'])->name('api.row_details');

@@ -8,15 +8,12 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
-    public function up()
+    public function up(): void
     {
         Schema::create('purchases', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('customer_id')->unsigned();
-            $table->foreign('customer_id')->references('id')->on('customers');
+            $table->id();
+            $table->foreignId('customer_id')->constrained();
             $table->string('bank_acc_number');
             $table->string('company');
             $table->timestamps();
@@ -25,10 +22,8 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
-    public function down()
+    public function down(): void
     {
         Schema::dropIfExists('purchases');
     }

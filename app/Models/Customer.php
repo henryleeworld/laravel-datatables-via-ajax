@@ -4,13 +4,18 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Customer extends Model
 {
+    /** @use HasFactory<\Database\Factories\CustomerFactory> */
     use HasFactory;
 
-    public function purchases()
+    /**
+     * Get the purchases for the customer.
+     */
+    public function purchases(): HasMany
     {
-        return $this->hasMany('App\Models\Purchase', 'customer_id', 'id');
+        return $this->hasMany(Purchase::class);
     }
 }

@@ -9,13 +9,11 @@ use Illuminate\Database\Seeder;
 class CustomerSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
-     *
-     * @return void
+     * Run the database seeders.
      */
-    public function run()
+    public function run(): void
     {
-        Customer::factory()->times(200)->create()->each(function ($customer) {
+        Customer::factory()->count(200)->create()->each(function ($customer) {
             for($i = 0; $i < 15; $i++) {
                 Purchase::factory()->create(['customer_id' => $customer->id]);
             }

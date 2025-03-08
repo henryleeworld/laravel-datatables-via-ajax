@@ -5,17 +5,9 @@ namespace Database\Factories;
 use App\Models\Purchase;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/*
-|--------------------------------------------------------------------------
-| Model Factories
-|--------------------------------------------------------------------------
-|
-| This directory should contain each of the model factory definitions for
-| your application. Factories provide a convenient way to generate new
-| model instances for testing / seeding your application's database.
-|
-*/
-
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Purchase>
+ */
 class PurchaseFactory extends Factory
 {
     /**
@@ -28,13 +20,13 @@ class PurchaseFactory extends Factory
     /**
      * Define the model's default state.
      *
-     * @return array
+     * @return array<string, mixed>
      */
-    public function definition()
+    public function definition(): array
     {
         return [
-            'bank_acc_number' => $this->faker->bankAccountNumber,
-            'company'         => $this->faker->company
+            'bank_acc_number' => fake()->bankAccountNumber,
+            'company'         => fake()->company
         ];
     }
 }
